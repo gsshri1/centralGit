@@ -5,10 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "api/demo")
 public class DemoController {
 
-    @GetMapping(value = "/home")
+    @GetMapping(value = "/")
     public String Home(){
         return "Welcome to the demo of openshift";
     }
